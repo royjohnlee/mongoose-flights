@@ -1,0 +1,19 @@
+<%- include('../partials/header')%>
+    <h2>Enter New Flights</h2>
+    <form action="/flights" method="POST">
+        <label>Airline:
+            <input type="text" name="airline">
+        </label><br>
+        <label>Airport:
+            <input type="text" name="airport">
+        </label><br>
+        <label>flightNo:
+            <input type="number" name="flightNo">
+        </label><br>
+        <label>Departs:
+            <input type="date" name="departs">
+        </label><br>
+        <button type="submit">Add Flights
+        </button>
+    </form>
+    <%- include('../partials/footer')%>
